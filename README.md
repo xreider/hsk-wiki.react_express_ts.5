@@ -46,5 +46,4 @@ API=http://localhost:4000
 
 git commit -m "first commit"
 git branch -M main
-git remote add origin https://github.com/xreider/hsk-wiki.react_express_ts.5.git
 git push -u origin main
