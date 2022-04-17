@@ -43,3 +43,8 @@ API=http://localhost:4000
 
 Во влкдаках браузера в scripts / for HSK.WiKi / Logo есть варианты каким сделать шар.
 Продолжить с этого
+
+git commit -m "first commit"
+git branch -M main
+git remote add origin https://github.com/xreider/hsk-wiki.react_express_ts.5.git
+git push -u origin main
