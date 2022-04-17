@@ -1,0 +1,33 @@
+@import "styles/themes/includes/colorSchemas.scss";
+
+// duplicate client\src\constants\common\colors.ts
+.darkField {
+  @include black_colorSchema;
+}
+.markField {
+  @include lightGrayMark_colorSchema;
+}
+.neutralField {
+  @include lightGray_colorSchema;
+}
+.readField {
+  @include white_colorSchema;
+}
+
+///////////////////////////////////////////////////////////////
+
+.darkField,
+.markField,
+.neutralField,
+.readField {
+  background-color: var(--backgroundColor_body);
+  color: var(--color_text);
+  svg.textColor {
+    fill: var(--color_text);
+  }
+  .textColor {
+    svg {
+      fill: var(--color_text);
+    }
+  }
+}

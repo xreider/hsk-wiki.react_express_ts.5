@@ -1,0 +1,8 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: min(max(min(5vh, 5vw), var(--space_normal)), 100px)
+    var(--space_fromLeftRightEdgeOfScreen);
+  gap: var(--space_normal);
+}

@@ -1,0 +1,16 @@
+// TODO make widest? Скорее всего не надо. Текстовое поле будет в разных местах,
+// то слева, то справа, а широкие картинки будут и так на максимальный их размер но не больше ширины экрана
+
+$widthSmallContainer: 350px;
+$widthReadContainer: 607px;
+$widthTightScreen: 800px;
+$widthWidestContainer: 960px;
+
+// duplicate in client\src\constants\CssVars\ESpaces.ts
+//              client\src\styles\variablesCSS\spaces.scss
+$spaces: "smallest", "verySmall", "small", "normal", "big", "biggest", "veryBig",
+  "veryBiggest", "presentationGap", "toScreenEdges", "bigBlock";
+
+$paddingFromNavbarSideWigthBigBlockGap: calc(
+  var(--height_navbar_total) + var(--space_bigBlock)
+);

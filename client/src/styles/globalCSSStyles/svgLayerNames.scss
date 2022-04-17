@@ -1,0 +1,8 @@
+svg {
+  [data-name="$bgColor_body"] {
+    fill: var(--backgroundColor_body);
+  }
+  [data-name="$bgColor_Text"] {
+    fill: var(--color_text);
+  }
+}

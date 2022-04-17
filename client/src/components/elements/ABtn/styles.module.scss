@@ -1,0 +1,35 @@
+.ABtn_wrapper {
+  // &.clicked {
+  //   // background-color: red;
+  // }
+  // &.hovered:not(.clicked) {
+  //   // background-color: blue;
+  // }
+
+  &.hoverBehaviour_showMaskPC {
+    &:hover {
+      background-color: var(--backgroundColor_mask);
+    }
+  }
+
+  transition: var(--speed_normal);
+}
+
+.ABtn_container {
+  gap: var(--space_small);
+}
+
+body[data-device="desktop"] {
+  .ABtn_wrapper {
+    &.clickBehaviour_showMaskPC {
+      &:active {
+        background-color: var(--backgroundColor_mask);
+      }
+    }
+    &.hoverBehaviour_showMaskPC {
+      &:hover {
+        background-color: var(--backgroundColor_mask);
+      }
+    }
+  }
+}

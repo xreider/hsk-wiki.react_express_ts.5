@@ -1,0 +1,35 @@
+@import "styles/includes/screenWidths.scss";
+@import "styles/includes/sizes.scss";
+
+.AField_wrapper {
+  &:last-child {
+    margin-bottom: 0;
+  }
+
+  &[class*="columnMaxScreenWidthPx_"] {
+    display: flex;
+    gap: var(--space_normal);
+
+    @each $num in 1, 2, 3, 4, 5, 6 {
+      h#{$num}:first-child {
+        margin-bottom: 0 !important;
+      }
+    }
+  }
+
+  @each $width in $screenWidths {
+    @media (max-width: #{$width + 'px'}) {
+      &.columnMaxScreenWidthPx_#{$width} {
+        flex-direction: column;
+      }
+    }
+  }
+}
+
+@each $space in $spaces {
+  .AField_wrapper {
+    &.marginBottom_#{$space} {
+      margin-bottom: var(--space_#{$space});
+    }
+  }
+}

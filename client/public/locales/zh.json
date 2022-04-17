@@ -1,0 +1,22 @@
+{
+  "actions": {
+    "varNextStepBtn": "下一步",
+    "startLearning": "开始学习",
+    "signInOrSignUp": "登录或者注册"
+  },
+  "long": {
+    "varNavbarSearchPlaceholder": "输入搜索词或短语",
+    "varEnterEmail": "输入你的电子邮箱"
+  },
+  "short": {
+    "erase": "擦掉",
+    "language": "语言",
+    "login": "登录",
+    "manual": "手动输入",
+    "menu": "菜单",
+    "search": "搜索",
+    "signup": "注册",
+
+    "varManualShort": "手动输入"
+  }
+}

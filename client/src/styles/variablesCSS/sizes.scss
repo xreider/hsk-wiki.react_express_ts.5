@@ -1,0 +1,14 @@
+@import "styles/variablesSCSS/screenSizes.scss";
+
+html {
+  --height_navbar_total: 45px;
+  --height_navbar_panel: 45px;
+
+  --heightSvg_normal: 20px;
+}
+
+@media (max-width: $widthTightScreen) {
+  html {
+    --height_navbar_total: 90px;
+  }
+}

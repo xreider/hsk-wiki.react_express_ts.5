@@ -1,0 +1,10 @@
+input::placeholder {
+  color: var(--color_textNormal);
+  opacity: 0.5;
+}
+
+input {
+  color: var(--color_textNormal);
+  padding: 0 var(--space_toScreenEdges);
+  height: 100%;
+}

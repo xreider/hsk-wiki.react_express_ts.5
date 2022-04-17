@@ -1,0 +1,56 @@
+@mixin black_colorSchema {
+  --backgroundColor_body: rgb(16, 13, 20);
+  --backgroundColor_mask: rgb(240 240 240 / 20%);
+  --color_border: rgb(240, 240, 240);
+  --color_inactiveBorder: rgba(240, 240, 240, 0.5);
+  --color_text: rgb(240, 240, 240);
+
+  --color_dark_accent: rgb(26 49 187);
+  --color_dark_danger: rgb(163 32 53);
+
+  --color_light_primary: rgb(71 119 249);
+  --color_light_danger: #e56464;
+}
+
+@mixin lightGrayMark_colorSchema {
+  --backgroundColor_body: #d9e4f0;
+  --backgroundColor_mask: rgb(0 0 0 / 4%);
+  --color_border: rgba(0, 0, 0, 0.31);
+  --color_inactiveBorder: rgba(0, 0, 0, 0.14);
+  --color_text: rgb(64 62 61);
+
+  --color_dark_accent: rgb(26 49 187);
+  --color_dark_danger: rgb(163 32 53);
+
+  --color_light_primary: rgb(71 119 249);
+  --color_light_danger: #e56464;
+}
+
+@mixin lightGray_colorSchema {
+  --backgroundColor_body: #f1f2f3;
+  --backgroundColor_mask: rgb(0 0 0 / 4%);
+  --backgroundColor_body: #f1f0ee;
+  --color_border: rgba(0, 0, 0, 0.31);
+  --color_inactiveBorder: rgba(0, 0, 0, 0.14);
+  --color_text: rgb(64 62 61);
+
+  --color_dark_accent: rgb(26 49 187);
+  --color_dark_danger: rgb(163 32 53);
+
+  --color_light_primary: rgb(71 119 249);
+  --color_light_danger: #e56464;
+}
+
+@mixin white_colorSchema {
+  --backgroundColor_body: #fcfcfc;
+  --backgroundColor_mask: rgb(0 0 0 / 4%);
+  --color_border: rgba(0, 0, 0, 0.1);
+  --color_inactiveBorder: rgba(0, 0, 0, 0.14);
+  --color_text: rgb(64 62 61);
+
+  --color_dark_accent: rgb(26 49 187);
+  --color_dark_danger: rgb(163 32 53);
+
+  --color_light_primary: rgb(71 119 249);
+  --color_light_danger: #e56464;
+}

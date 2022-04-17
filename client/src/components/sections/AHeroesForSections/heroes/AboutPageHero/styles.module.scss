@@ -1,0 +1,120 @@
+@import "styles/includes/fonts.scss";
+@import "styles/includes/elements.scss";
+
+.wrapper {
+  // background: repeat url("/public/img/noise/noisy-texture-1.png"),
+  // background: repeat url("/public/img/noise/noisy-texture-2.png"),
+  // linear-gradient(49deg, #32333e, #535565),
+
+  background: linear-gradient(49deg, #110101 10%, #632222 90%);
+  background: linear-gradient(49deg, #16120f 10%, #494743 90%);
+  background: linear-gradient(49deg, #16120f 10%, #61584c 90%);
+  background: linear-gradient(49deg, #16120f 10%, #61584c 90%);
+  background: linear-gradient(49deg, #241c17 10%, #61584c 90%);
+  background: radial-gradient(farthest-side at 60% 0%, #554e44, #241c17);
+  background: radial-gradient(farthest-side at 60% 0%, #613636, #2c1818);
+  background: radial-gradient(farthest-side at 70% 0%, #61584c, #241c17);
+  background: radial-gradient(farthest-side at 70% 0%, #554944, #241717);
+  background: radial-gradient(farthest-side at 70% 0%, #61584c, #241c17);
+  position: relative;
+  padding: 0 var(--space_toScreenEdges);
+  padding-bottom: var(--space_bigBlock);
+
+  &::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100vw;
+    height: 100%;
+    background: repeat url("/public/img/noise/noisy-texture-2.png");
+    opacity: 0.5;
+    z-index: 1;
+    @include touchActionNone;
+  }
+  // padding-bottom: var(--space_bigBlock);
+}
+
+// @media (max-width: 2560px) {
+
+// }
+
+// .img {
+// }
+
+.text {
+  // @include headingFontFamily;
+  max-width: 500px;
+}
+
+.Dong_container {
+  z-index: 8;
+}
+
+.Dong {
+  // filter: drop-shadow(0px 10px 14px rgba(0, 0, 0, 0.589)) sepia(0.5)
+  //   drop-shadow(2px 4px 6px rgba(0, 0, 0, 0.418)) hue-rotate(-14deg)
+  //   saturate(1.2);
+  // filter: drop-shadow(0px 14px 14px rgba(0, 0, 0, 0.589))
+  //   drop-shadow(2px 4px 2px rgba(0, 0, 0, 0.555))
+  //   drop-shadow(2px 4px 6px rgba(0, 0, 0, 0.418)) sepia(0.4) hue-rotate(-6deg)
+  //   saturate(1.1);
+
+  filter: drop-shadow(0px 14px 14px rgba(0, 0, 0, 0.3))
+    drop-shadow(2px 4px 2px rgba(0, 0, 0, 0.3))
+    drop-shadow(2px 4px 6px rgba(0, 0, 0, 0.3)) sepia(0.4) hue-rotate(345deg)
+    grayscale(0.1);
+
+  filter: drop-shadow(0px 14px 14px rgba(0, 0, 0, 0.3))
+    drop-shadow(2px 4px 2px rgba(0, 0, 0, 0.3))
+    drop-shadow(2px 4px 6px rgba(0, 0, 0, 0.3)) sepia(0.45) hue-rotate(317deg);
+  filter: drop-shadow(0px 14px 14px rgba(0, 0, 0, 0.3))
+    drop-shadow(2px 4px 2px rgba(0, 0, 0, 0.3))
+    drop-shadow(2px 4px 6px rgba(0, 0, 0, 0.3)) sepia(0.45) hue-rotate(327deg);
+  filter: drop-shadow(0px 14px 14px rgba(0, 0, 0, 0.3))
+    drop-shadow(2px 4px 2px rgba(0, 0, 0, 0.3))
+    drop-shadow(2px 4px 6px rgba(0, 0, 0, 0.3)) sepia(0.4) hue-rotate(-6deg);
+  filter: drop-shadow(0px 14px 14px rgba(0, 0, 0, 0.2))
+    drop-shadow(2px 4px 2px rgba(0, 0, 0, 0.2))
+    drop-shadow(2px 4px 6px rgba(0, 0, 0, 0.2)) sepia(0.4) hue-rotate(-15deg);
+  width: 100%;
+  max-height: max(25vh, 80px);
+}
+
+.Dong,
+.HSKWiKi,
+.textImg {
+  max-width: min(500px, 100%);
+}
+
+.HSKWiKi,
+.textImg {
+  max-height: max(10vh, 30px);
+  filter: drop-shadow(1px 1px 1px #805d4759) hue-rotate(345deg);
+  filter: drop-shadow(1px 1px 1px #805d4759) hue-rotate(-6deg);
+}
+
+// If screen less then 500px, HSKWiKi and text become pale,
+// so I change saturation and contrast on small screens
+@media (max-width: 500px) {
+  .textImg,
+  .HSKWiKi {
+    filter: contrast(1.4) saturate(0.8);
+  }
+}
+
+body[data-language-interface="en"] {
+  .textImg {
+    max-height: max(15.3vh, 30px);
+  }
+}
+body[data-language-interface="zh"] {
+  .textImg {
+    max-height: max(7vh, 30px);
+  }
+}
+body[data-language-interface="ru"] {
+  .textImg {
+    max-height: max(8.2vh, 30px);
+  }
+}

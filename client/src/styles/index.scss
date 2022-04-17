@@ -1,0 +1,24 @@
+// init
+@import "styles/init/filterBlur.scss";
+@import "styles/init/fonts.scss";
+@import "styles/init/resetCss.scss";
+
+// font-faces
+@import "styles/font-faces/artisticFontFamilies.scss";
+@import "styles/font-faces/OpenSans.scss";
+@import "styles/font-faces/Roboto.scss";
+@import "styles/font-faces/Akrobat.scss";
+
+// variablesCSS
+@import "styles/variablesCSS/elements.scss";
+@import "styles/variablesCSS/sizes.scss";
+@import "styles/variablesCSS/spaces.scss";
+@import "styles/variablesCSS/speed.scss";
+
+// global
+@import "styles/globalCSSStyles/form.scss";
+@import "styles/globalCSSStyles/svgLayerNames.scss";
+@import "styles/globalCSSStyles/body.scss";
+
+// themes
+@import "styles/themes/index.scss";

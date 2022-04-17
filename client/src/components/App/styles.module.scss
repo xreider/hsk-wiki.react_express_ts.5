@@ -1,0 +1,17 @@
+@import "styles/includes/sizes.scss";
+
+.PApp_wrapper {
+  min-height: 200vh;
+}
+
+body[data-device="desktop"] {
+  .PApp_wrapper {
+    padding-top: $paddingFromNavbarSideWigthBigBlockGap;
+  }
+}
+
+body[data-device="phone"] {
+  .PApp_wrapper {
+    padding-bottom: $paddingFromNavbarSideWigthBigBlockGap;
+  }
+}

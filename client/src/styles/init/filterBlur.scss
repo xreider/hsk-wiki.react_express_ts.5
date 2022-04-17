@@ -1,0 +1,5 @@
+@for $i from 1 through 200 {
+  [data-name*="$effect_blur_#{$i}"] {
+    filter: blur(#{$i}px);
+  }
+}

@@ -1,0 +1,71 @@
+$regularFontFamilies: Helvetica Neue, Helvetica, "Gill Sans", Geneva, Verdana,
+  Tahoma, sans-serif;
+
+$normalFontFamilies: "Akrobat", $regularFontFamilies;
+$normalFontFamilies: "OpenSans_Regular", $regularFontFamilies;
+$normalFontFamilies: "OpenSans_SemiCondensed", $regularFontFamilies;
+$wideFontFamilies: "OpenSans_Regular", $regularFontFamilies;
+$normalsemiCondensedFontFamilies: "OpenSans_SemiCondensed", $regularFontFamilies;
+$artisticRegularFontFamilies: "artisticRegularFontFamily", $regularFontFamilies;
+
+// font-size: 22px;
+// line-height: 1.55;
+// font-family: 'Akrobat',Arial,sans-serif;
+// font-weight: 300;
+
+// $normalFontFamilies: $regularFontFamilies;
+// $normalsemiCondensedFontFamilies: $regularFontFamilies;
+
+// // artisticRegularFontFamilies
+
+// @mixin artisticRegularFont_h1_h2 {
+//   font-family: $artisticRegularFontFamilies;
+//   line-height: 0.7;
+//   font-size: min(3rem, max(1.5rem, 7vmin));
+// }
+
+// @mixin artisticRegularFont_h3 {
+//   font-family: $artisticRegularFontFamilies;
+//   line-height: 0.8;
+//   font-size: 2rem;
+// }
+
+// @mixin artisticRegularFont_h4 {
+//   font-family: $artisticRegularFontFamilies;
+//   line-height: 0.8;
+//   font-size: 1.5rem;
+// }
+
+// h {
+//   font-family: Helvetica, arial, sans-serif;
+//   font-weight: bold;
+//   font-size: 18px;
+//   text-transform: none;
+//   letter-spacing: 0px;
+//   font-family: Roboto;
+//   font-weight: normal;
+//   font-style: normal;
+//   line-height: 1.2em;
+//   font-size: 1.3em;
+//   text-transform: uppercase;
+//   text-decoration: none;
+//   letter-spacing: 0.06em;
+// }
+
+// aa {
+//   font-family: Georgia, serif;
+//   font-weight: normal;
+//   font-style: italic;
+//   line-height: 1.6em;
+//   font-size: 13px;
+//   text-transform: none;
+//   letter-spacing: 0px;
+//   font-family: Roboto;
+//   font-weight: 500;
+//   font-style: normal;
+//   line-height: 1.9em;
+//   font-size: 15px;
+//   text-transform: uppercase;
+//   text-decoration: none;
+//   letter-spacing: 2px;
+// }

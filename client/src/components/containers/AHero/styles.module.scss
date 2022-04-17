@@ -1,0 +1,18 @@
+@import "styles/includes/sizes.scss";
+
+body[data-device="desktop"] {
+  .wrapper {
+    &.size_fullWidth {
+      margin-top: calc(-1 * $paddingFromNavbarSideWigthBigBlockGap);
+      padding-top: $paddingFromNavbarSideWigthBigBlockGap;
+    }
+  }
+}
+
+body[data-device="phone"] {
+  .wrapper {
+    &.size_fullWidth {
+      padding-top: var(--space_bigBlock);
+    }
+  }
+}

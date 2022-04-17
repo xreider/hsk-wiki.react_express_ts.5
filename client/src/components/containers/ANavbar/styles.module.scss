@@ -1,0 +1,109 @@
+@import "styles/includes/sizes.scss";
+@import "styles/includes/fonts.scss";
+
+.ANavbar_wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: fixed;
+  position: absolute;
+  width: 100%;
+  top: 0;
+  left: 0;
+  z-index: 10;
+  //   background-color: coral;
+
+  &.transparentBG {
+    background-color: transparent;
+    box-shadow: rgba(0, 0, 0, 0) 0px -1px 3px, rgba(0, 0, 0, 0) 0px -4px 12px !important;
+  }
+
+  // duplicate in client\src\hooks\common\useScrollDirection.ts
+  &.positionFixed {
+    // background-color: red !important;
+    position: fixed;
+
+    // animation-fill-mode: both;
+    // animation-name: down;
+    // animation-duration: var(--speed_slowest);
+  }
+  &.positionAbsolute {
+    position: absolute;
+  }
+
+  // &.scrollDirDown.animationUp:not(.positionAbsolute) {
+  //   animation-fill-mode: both;
+  //   animation-name: up;
+  //   animation-duration: var(--speed_slowest);
+  //   // background-color: blue !important;
+  // }
+}
+
+body[data-device="phone"] {
+  .ANavbar_wrapper {
+    top: unset;
+    bottom: 0;
+  }
+}
+
+.ANavbar_panel {
+  width: #{$widthWidestContainer};
+  max-width: 100%;
+  //   background-color: navy;
+  height: var(--height_navbar_panel);
+  display: flex;
+  justify-content: space-between;
+}
+
+.ANavbar_item {
+  //   height: 100%;
+  display: flex;
+  align-items: center;
+  //   background-color: aqua;
+  padding: 0 var(--space_toScreenEdges);
+  text-transform: uppercase;
+  font-size: 0.85em;
+  font-weight: 600;
+
+  // letter-spacing: 0.5px;
+  letter-spacing: 1px;
+
+  &.wideFont {
+    font-family: $wideFontFamilies;
+  }
+}
+
+.ASearchForm_wrapper {
+  // background-color: red;
+  width: 450px;
+  max-width: 100%;
+  display: flex;
+  flex: 1;
+}
+
+.ASearchForm_input {
+  // border-top: none;
+  border-color: var(--color_inactiveBorder);
+}
+
+.ANavFiller_wrapper {
+  flex: 1;
+}
+
+@keyframes down {
+  0% {
+    transform: translateY(calc(var(--height_navbar_total) * -1));
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+@keyframes up {
+  0% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(calc(var(--height_navbar_total) * -1));
+  }
+}

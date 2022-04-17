@@ -1,0 +1,12 @@
+@import "styles/includes/sizes.scss";
+
+.AHeroWithNotificationsWrapper {
+  //   background-color: red;
+  max-width: $widthWidestContainer;
+  padding: 0 var(--space_fromLeftRightEdgeOfScreen);
+  margin: auto;
+
+  & > *:not(:last-child) {
+    margin-bottom: var(--space_normal);
+  }
+}

@@ -1,0 +1,22 @@
+{
+  "actions": {
+    "varNextStepBtn": "Next step",
+    "startLearning": "Start learning",
+    "signInOrSignUp": "Signin or signup"
+  },
+  "long": {
+    "varNavbarSearchPlaceholder": "Type a search word or phrase",
+    "varEnterEmail": "Enter Your Email"
+  },
+  "short": {
+    "erase": "Erase",
+    "language": "Lang",
+    "login": "Login",
+    "manual": "Manual",
+    "menu": "Menu",
+    "search": "Search",
+    "signup": "Signup",
+
+    "varManualShort": "Manual"
+  }
+}

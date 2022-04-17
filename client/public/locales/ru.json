@@ -1,0 +1,22 @@
+{
+  "actions": {
+    "varNextStepBtn": "Далее",
+    "startLearning": "Начать обучение",
+    "signInOrSignUp": "Войти или зарегистрироваться"
+  },
+  "long": {
+    "varNavbarSearchPlaceholder": "Введите слово или фразу",
+    "varEnterEmail": "Введите Вашу электронную почту"
+  },
+  "short": {
+    "erase": "Стереть",
+    "language": "Язык",
+    "login": "Вход",
+    "manual": "Руч.ввод",
+    "menu": "Меню",
+    "search": "Поиск",
+    "signup": "Новичок",
+
+    "varManualShort": "Ручн."
+  }
+}
