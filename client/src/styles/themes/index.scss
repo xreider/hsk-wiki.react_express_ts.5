@@ -1,6 +1,8 @@
 @import "styles/themes/includes/colorSchemas.scss";
 
 // duplicate client\src\constants\common\colors.ts
+
+//////////////////
 .darkField {
   @include black_colorSchema;
 }
@@ -11,6 +13,21 @@
   @include lightGray_colorSchema;
 }
 .readField {
+  @include white_colorSchema;
+}
+
+/////////////////////// Always
+
+.alwaysDarkField {
+  @include black_colorSchema;
+}
+.alwaysMarkField {
+  @include lightGrayMark_colorSchema;
+}
+.alwaysNeutralField {
+  @include lightGray_colorSchema;
+}
+.alwaysReadField {
   @include white_colorSchema;
 }
 

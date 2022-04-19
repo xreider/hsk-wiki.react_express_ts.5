@@ -11,6 +11,8 @@
   top: 0;
   left: 0;
   z-index: 10;
+  transition: transform var(--speed_quick), background-color var(--speed_quick);
+  transform: translateY(0);
   //   background-color: coral;
 
   &.transparentBG {
@@ -18,18 +20,35 @@
     box-shadow: rgba(0, 0, 0, 0) 0px -1px 3px, rgba(0, 0, 0, 0) 0px -4px 12px !important;
   }
 
-  // duplicate in client\src\hooks\common\useScrollDirection.ts
-  &.positionFixed {
-    // background-color: red !important;
+  &.fixed {
     position: fixed;
-
-    // animation-fill-mode: both;
-    // animation-name: down;
-    // animation-duration: var(--speed_slowest);
+    // transform: translateY(0);
+  }
+  &.hide {
+    // position: fixed;
+    transform: translateY(calc(var(--height_navbar_total) * -1));
   }
   &.positionAbsolute {
     position: absolute;
+    transition: transform 0s;
   }
+  // &.closeToTop {
+  //   transition: transform 0s;
+  //   transform: translateY(0);
+  // }
+
+  // duplicate in client\src\hooks\common\useScrollDirection.ts
+  // &.positionFixed {
+  //   // background-color: red !important;
+  //   position: fixed;
+
+  //   // animation-fill-mode: both;
+  //   // animation-name: down;
+  //   // animation-duration: var(--speed_slowest);
+  // }
+  // &.positionAbsolute {
+  //   position: absolute;
+  // }
 
   // &.scrollDirDown.animationUp:not(.positionAbsolute) {
   //   animation-fill-mode: both;
@@ -90,20 +109,20 @@ body[data-device="phone"] {
   flex: 1;
 }
 
-@keyframes down {
-  0% {
-    transform: translateY(calc(var(--height_navbar_total) * -1));
-  }
-  100% {
-    transform: translateY(0);
-  }
-}
+// @keyframes down {
+//   0% {
+//     transform: translateY(calc(var(--height_navbar_total) * -1));
+//   }
+//   100% {
+//     transform: translateY(0);
+//   }
+// }
 
-@keyframes up {
-  0% {
-    transform: translateY(0);
-  }
-  100% {
-    transform: translateY(calc(var(--height_navbar_total) * -1));
-  }
-}
+// @keyframes up {
+//   0% {
+//     transform: translateY(0);
+//   }
+//   100% {
+//     transform: translateY(calc(var(--height_navbar_total) * -1));
+//   }
+// }
